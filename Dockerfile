@@ -1,7 +1,9 @@
 FROM php:8.0-apache
+
 LABEL maintainer="Arian Valdivieso"
-RUN apt update \
-        && apt install -y \
+
+RUN apt update 
+RUN apt install -y \
             g++ \
             libicu-dev \
             libpq-dev \
